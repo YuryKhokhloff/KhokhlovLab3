@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод данных для предсказания</title>
+</head>
+<body>
+    <h1>Ввод данных</h1>
+    <form method="POST" action="http://localhost:5000/predict">
+      <label for="age">Количество лет (16-99)</label><br>
+      <input type="number" id="age" name="age" min="16" max="99"><br><br>
+      <label for="edu">Количество законченных лет обучения(0-16)</label><br>
+      <input type="number" id="edu" name="edu" min="0" max="16"><br><br>
+      <input type="submit" id="prediction" value="Predict">
+  </form>
+</body>
+</html>
